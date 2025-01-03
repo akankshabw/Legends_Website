@@ -160,10 +160,35 @@ const navbarLinksActive = () => {
 window.addEventListener('load', navbarLinksActive);
 document.addEventListener('scroll', navbarLinksActive);
 
+
+
 // Initialising javascript for announcments
 // https://swiperjs.com/demos#slides-per-view
 
+window.onload = () => {
+    // Automatically transition to Announcements page after 5 seconds
+    setTimeout(() => {
+        goToAnnouncementsPage();
+    }, 5000);
+};
 
+function goToAnnouncementsPage() {
+    const homePage = document.getElementById("home-page");
+    const announcementsPage = document.getElementById("Announcements");
+
+    // Animate transition
+    homePage.style.transform = "translateX(-100%)";
+    announcementsPage.style.transform = "translateX(0)";
+}
+
+function goToHomePage() {
+    const homePage = document.getElementById("home-page");
+    const announcementsPage = document.getElementById("Announcements");
+
+    // Animate transition back to the home page
+    homePage.style.transform = "translateX(0)";
+    announcementsPage.style.transform = "translateX(100%)";
+}
 
 
 let nextDom = document.getElementById('next');
@@ -215,10 +240,68 @@ function showSlider(type){
     }, timeAutoNext)
 }
 
+const slider = document.querySelector('.slider');
+const circle = document.querySelector('.circle');
+const leftPage = document.querySelector('.intro-container');
+const rightPage = document.querySelector('.page-hidden');
 
+let isDragging = false;
+let startX = 0;
+let currentX = 0;
 
+// Start dragging the circle
+circle.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startX = e.clientX;
+  circle.style.transition = 'none'; // Disable transition while dragging
+});
 
+document.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
 
+  const deltaX = e.clientX - startX;
+  currentX = Math.max(0, Math.min(30, deltaX)); // Keep within slider bounds (50px width - circle width)
+  circle.style.left = `${currentX}px`;
+});
+
+document.addEventListener('mouseup', () => {
+  if (!isDragging) return;
+  isDragging = false;
+
+  // Determine final position
+  const midpoint = 15; // Half of slider width (50px) minus circle width (20px)
+  const moveRight = currentX >= midpoint;
+
+  // Snap circle to left or right
+  circle.style.transition = 'left 0.3s ease';
+  circle.style.left = moveRight ? '30px' : '0px';
+
+  // Show corresponding page
+  if (moveRight) {
+    leftPage.style.transform = 'translateX(-100%)';
+    rightPage.style.transform = 'translateX(0%)';
+  } else {
+    leftPage.style.transform = 'translateX(0%)';
+    rightPage.style.transform = 'translateX(100%)';
+  }
+});
+
+// Add mousedown event for dragging
+circle.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX; // Record the starting position of the drag
+    circle.style.transition = 'none'; // Disable transition during drag
+  });
+
+// Automatically move the circle and switch to the second page after 5 seconds
+setTimeout(() => {
+    circle.style.transition = 'left 0.3s ease'; // Smooth transition
+    circle.style.left = '30px'; // Move circle to the right
+  
+    // Transition pages
+    leftPage.style.transform = 'translateX(-100%)'; // Hide left page
+    rightPage.style.transform = 'translateX(0%)';   // Show right page
+  }, 5000);
 
 
 
