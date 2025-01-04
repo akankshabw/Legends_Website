@@ -24,6 +24,7 @@
     <!-- Main CSS files -->
     <link href="assets/css/base.css" rel="stylesheet" />
     <link href="assets/css/home.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/gallerystyle.css">
 </head>
 
 <body>
@@ -52,21 +53,21 @@
                         <i class="bi bi bi-chat-left-quote-fill"></i>
                         <span class="visibility-hidden">Testimonials</span>
                     </a></li>
-                <li><a href="index.html#map">
+                <!-- <li><a href="index.html#map">
                         <i class="bi bi-geo-alt-fill"></i>
                         <span class="visibility-hidden">Visit Us</span>
-                    </a></li>
+                    </a></li> -->
             </ul>
         </nav>
         <!-- #nav-menu-container -->
     </header>
     <!-- End Header -->
-    
-    
+
     <!-- ======= Intro Section ======= -->
     <section id="intro">
-        <div id="home-page" class="intro-container">
+        <div class="intro-container">
 
+            
             <div class="logos">
                 <a href="index.html"><img class="ec-logo" src="assets/images/logo/logo.png" alt=""></a>
                 <div class="logo-bar"></div>
@@ -88,7 +89,7 @@
             </div>
 
             <div class="text-box3" data-aos="slide-right">
-                <a href="https://drive.google.com/file/d/1MhzupVjRs_5tRxpZFoPPkK44YWsothUR/view"
+                <a href="schedule.html"
                     target="_blank"><i class="fa fa-calendar"></i>&nbsp;SCHEDULE</a>
                 <span class="bar"> | </span>
                 <a href="https://drive.google.com/file/d/1yGA9cMQIbCgwwx0Z3attso68fHiw3X-w/view"
@@ -218,41 +219,42 @@
         <!-- ======= Executive Candidates Section ======= -->
         <section id="executives">
             <div class="container" data-aos="slide-right">
-                <h2 class="text-center">EXECUTIVE CANDIDATES</h2>
+                <h2 class="text-center">CANDIDATES</h2>
                 
                 <div class="row candidate-row">
-                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12 openPoster clickable"
+                    <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 general openPoster clickable"
                         onclick="openModal('poster1')">
                         <a href="https://ec-iitk-web.web.app/candidates\executives\divyeshchoudhary.html" class="cand-link"></a>
                         <div class="candidate-col">
-                            <div class="exe-img">
-                                <img src="assets/images/executives/Executive&#32;24/Dhruv&#32;Misra.jpg" alt="">
+                            <div class="exe-img " >
+                                <a href = "general.html"><img src="assets\images\social_media\general.jpg" alt=""></a>
                             </div>
-                            <div class="desc">
-                                <h4 class="candidate-name">Dhruv Mishra</h4>
-                                <p class="post">President</p>
-                                <p class="category">Students' Gymkhana</p>
-                            </div>
+                            
+                            <a href = "general.html"><div class="desc" id = "generalDesc">
+                                <h4 class="candidate-name">General Elections</h4>
+                                <!-- <p class="post">President</p> -->
+                                <!-- <p class="category">Students' Gymkhana</p> -->
+                            </div></a>
                         </div>
 
                     </div>
 
-                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12 openPoster clickable"
+                    <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 mid openPoster clickable"
                         onclick="openModal('poster2')">
 
                         <div class="candidate-col">
                             <div class="exe-img">
-                                <img src="assets/images/executives/Executive&#32;24/Jayant&#32;Nagar.jpeg" alt="">
+                                <a href = "mid.html"><img src="assets\images\social_media\mid term.jpg" alt="" style = "height: 100%; width: 100%;"></a>
                             </div>
-                            <div class="desc">
-                                <h4 class="candidate-name">Jayant Nagar</h4>
-                                <p class="post">President</p>
-                                <p class="category">Students' Gymkhana</p>
-                            </div>
+                            <a href = "mid.html"><div class="desc" id = "midDesc">
+                                <h4 class="candidate-name">Mid-Term and By Elections</h4>
+                                <!-- <p class="post">President</p> -->
+                                <!-- <p class="category">Students' Gymkhana</p> -->
+                            </div></a>
                         </div>
 
                     </div>
-                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12 openPoster clickable"
+                    <!--<div class="col col-lg-3 col-md-4 col-sm-6 col-12 openPoster clickable"
                         onclick="openModal('poster3')">
 
                         <div class="candidate-col">
@@ -367,7 +369,7 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -377,14 +379,14 @@
         <!-- End Executive Candidates Section -->
 
         <!-- ======= Senator Candidates Section ======= -->
-        <section id="senators">
+        <!-- <section id="senators">
             <div class="container" data-aos="slide-left">
                 <h2 class="text-center">SENATOR CANDIDATES</h2>
                 <a href="senators.html" target="_blank">
                     <span>CLICK HERE TO VIEW</span>
                 </a>
             </div>
-        </section>
+        </section> -->
         <!-- End Senator Candidates Section -->
 
         <!-- ======= Team Section ======= -->
@@ -542,7 +544,25 @@
                 </div>
             </div>
         </section>
-        <!-- End Team Section -->
+    <!-- End Team Section -->
+
+        <!-- Gallery -->
+         <div class="gallery_container">
+        <div class="left-text">
+            <h2 class="heading">Gallery</h2>
+            <p class="subheading">Upholding democracy with integrity, the Election Commission ensures free, fair, and transparent elections for a stronger campus.</p>
+        </div>
+        <div class="gallery" id="gallery">
+            <div class="gallery_box gallery_row-2" id="gallery_box_1-1" style="background-image: url(assets/images/gallery/EC\ room.jpg);"></div>
+            <div class="gallery_box gallery_col-2" style="background-image: url(assets/images/gallery/OAT.png);"></div>
+            <div class="gallery_box" style="background-image: url(assets/images/gallery/OAT\ 2.png);"></div>
+            <div class="gallery_box gallery_row-2" style="background-image: url(assets/images/gallery/After\ 2.jpg);"></div>
+            <div class="gallery_box gallery_col-2" style="background-image: url(assets/images/gallery/AFter.jpg);"></div>
+            <div class="gallery_box" style="background-image: url(assets/images/gallery/SenateHall.png);"></div>
+            <div class="gallery_box gallery_col-2" style="background-image: url(assets/images/gallery/EC\ room.jpg);"></div>
+        </div>
+    </div>
+         <!-- End Gallery Section  -->
 
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials">
@@ -704,7 +724,7 @@
         <!-- End Testimonials Section -->
 
         <!-- ======= Map Section ======= -->
-        <section id="map">
+        <!-- <section id="map">
             <div class="container" data-aos="slide-left">
                 <h2 class="text-center">VISIT US</h2>
                 <div class="map-div">
@@ -714,7 +734,7 @@
                         aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Map Section -->
     </main>
     <!-- End #main -->
@@ -743,13 +763,14 @@
                             <ul>
                                 <li><a href="index.html#team" class="scroll-to"><i class="bi bi-caret-right-fill"></i> TEAM</a>
                                 </li>
-                                <li><a href="index.html#"><i class="bi bi-caret-right-fill"></i> SCHEDULE</a></li>
+                                <li><a href="schedule.html"><i class="bi bi-caret-right-fill"></i> SCHEDULE</a></li>
                                 <li><a href="index.html#executives" class="scroll-to"><i class="bi bi-caret-right-fill"></i>
                                         CANDIDATES</a></li>
                                 <li><a href="https://nominations.eciitk.com/" target="_blank"><i
                                             class="bi bi-caret-right-fill"></i> NOMINATION PORTAL</a></li>
                                 <li><a href="https://complaints.eciitk.com/" target="_blank"><i
                                             class="bi bi-caret-right-fill"></i> COMPLAINTS PORTAL</a></li>
+                                <li><a href="faqs.html" target="_blank" class="bi bi-caret-right-fill">FAQs</a></li>
                             </ul>
                         </div>
                     </div>
