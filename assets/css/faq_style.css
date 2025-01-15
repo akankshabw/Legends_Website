@@ -1,6 +1,6 @@
 :root {
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     --bg--primary: #D9D4D2;
     --bg--secondary: #0D0D0D;
     --transition--speed: 600ms;
@@ -56,11 +56,13 @@ main {
     justify-content: flex-end;
     width: 100%;
     background-color: #000;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     z-index: 1;
     opacity: 1;
     height: 10vh;
+    padding: 20px;
 }
+
 
 .logo {
     align-items: center;

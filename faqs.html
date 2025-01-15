@@ -9,27 +9,38 @@
       href="assets/images/faqs/faqs.svg"
       type="image/x-icon"
     />
+    
+
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper-bundle/css/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/css/aos.css" rel="stylesheet" />
+
+
     <link rel="stylesheet" href="assets/css/faq_style.css" />
     <link rel="stylesheet" href="assets/css/faqsstyle.css" />
     <link rel="stylesheet" href="assets/css/footer_faq.css" />
+    <link rel="stylesheet" href="assets\\css\\candidates.css">
   </head>
 
   <body>
-    <section style="display: flex">
-      <div>
-        <a href="https://eciitk.com/" target="_blank" class="home-logo">
-          <img src="assets/images/faqs/home.svg" alt="Home" />
+    <section style="display: flex;">
+      <!-- <div class = logoDiv2>
+        <a href="index.html"  class="home-logo">
+          <img src="assets/images/faqs/ec-logo.svg" alt="Home" />
         </a>
-      </div>
+      </div> -->
       <div class="logoDiv">
-        <a href="/" target="_blank" class="logoHref">
-          <img
+        <a href="index.html" class="logoHref">
+          <!-- <img
             src="assets/images/faqs/ec-logo.svg"
             alt="EC Logo"
             class="logo"
-          />
+          /> -->
           <img
-            src="assets/images/faqs/iitk-logo.svg"
+            src="assets/images/faqs/ec-logo.svg"
             alt="IITK Logo"
             class="logo"
           />
@@ -42,7 +53,7 @@
           FAQ's <br />
           <span style="font-size: 2.25rem"
             >General Elections <br />
-            2024 <br
+            2025 <br
           /></span>
         </h1>
 
@@ -251,32 +262,75 @@
         </h5>
       </section>
     </main>
-    <div class="footer">
-      <p>Useful Navigations</p>
-      <div style="display: flex; justify-content: space-around" class="links">
-        <div>
-          <ul>
-            <li><a href="/#team">Teams</a></li>
-            <li><a href="coc.html">Code of Conduct</a></li>
-            <li><a href="/#executives">Candidates</a></li>
-            <li>
-              <a href="https://nominations.eciitk.com/">Nomination Portal</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="/#testimonials">Testimonials</a></li>
-            <li><a href="/#footer">Contact</a></li>
-            <li><a href="https://complaints.eciitk.com/">Complaints</a></li>
-          </ul>
-        </div>
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+      <div class="social-links">
+          <div>
+              <p>Get Connected with us on social networks</p>
+              <a href="https://www.instagram.com/ec_iitk/" target="_blank"><img
+                      src="assets/images/social_media/instagram.svg"></a>
+              <a href="https://www.facebook.com/election.commission.iitk/" target="_blank"><img
+                      src="assets/images/social_media/facebook.svg"></a>
+          </div>
       </div>
-      <div class="copyright">
-        &copy; 2024 Election Commission, IIT Kanpur, All Rights Reserved
+      <div class="footer-top">
+          <div class="container">
+              <div class="row footer-row">
+                  <div class="col-lg-3 col-sm-6 footer-logo text-center">
+                      <a href="index.html"><img src="assets/images/logo/logo_cropped.png"
+                              style="position: relative" /></a>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 footer-links">
+                      <div class="useful-link">
+                          <h3>Useful Links</h3>
+                          <ul>
+                              <li><a href="index.html#team" class="scroll-to"><i class="bi bi-caret-right-fill"></i> TEAM</a>
+                              </li>
+                              <li><a href="https://drive.google.com/file/d/1OVIUeo6vhRWjH8KgC1-cMk33GgcxCLG_/view"><i class="bi bi-caret-right-fill"></i> SCHEDULE</a></li>
+                              <li><a href="index.html#executives" class="scroll-to"><i class="bi bi-caret-right-fill"></i>
+                                      CANDIDATES</a></li>
+                              <li><a href="https://nominations.eciitk.com/" target="_blank"><i
+                                          class="bi bi-caret-right-fill"></i> NOMINATION PORTAL</a></li>
+                              <li><a href="https://complaints.eciitk.com/" target="_blank"><i
+                                          class="bi bi-caret-right-fill"></i> COMPLAINTS PORTAL</a></li>
+                              <!-- <li><a href="faqs.html" target="_blank" class="bi bi-caret-right-fill">FAQs</a></li> -->
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 footer-contact">
+                      <div class="contact-us">
+                          <h3>Contact Us</h3>
+                          <p style="position: relative">
+                              Senate Hall <br />
+                              New SAC, OAT<br />
+                              IIT Kanpur <br />
+                              <strong style="color: #18d26e">Phone:</strong>
+                              <a style="color: #ffffff" href="tel:+917071016690">+91 7071016690</a><br />
+                              <strong style="color: #18d26e">Email:</strong>
+                              <a style="color: #ffffff" href="mailto:ec_sg@iitk.ac.in">ec_sg@iitk.ac.in</a><br />
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
+
+      <div class="container">
+          <div class="copyright">&copy; Copyright <strong>Election Commission</strong>, All Rights Reserved</div>
+      </div>
+      </div>
+  </footer>
   </body>
   <script src="script.js"></script>
 </html>
