@@ -30,20 +30,24 @@ function closeModal(divId) {
 let genModal = document.querySelector(".general");
 genModal.addEventListener("mouseenter",()=>{
     document.querySelector("#generalDesc").style.height = "100%";
+    document.querySelector("#genH4").innerText = "Click Here to \nSee Candidates";
     genModal.style.scale = '1.05';
 })
 genModal.addEventListener("mouseleave",()=>{
     document.querySelector("#generalDesc").style.height = "fit-content";
+    document.querySelector("#genH4").innerText = "General Elections";
     genModal.style.scale = '1';
 })
 
 let midModal = document.querySelector(".mid");
 midModal.addEventListener("mouseenter",()=>{
     document.querySelector("#midDesc").style.height = "100%";
+    document.querySelector("#midH4").innerText = "Click Here to \nSee Candidates";
     midModal.style.scale = '1.05';
 })
 midModal.addEventListener("mouseleave",()=>{
     document.querySelector("#midDesc").style.height = "fit-content";
+    document.querySelector("#midH4").innerText = "Mid-Term and By Elections";
     midModal.style.scale = '1';
 })
 

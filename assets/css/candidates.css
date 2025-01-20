@@ -4,7 +4,7 @@ body{
     margin: 0;
 }
 header{
-    height: 15vh;
+    height: fit-content;
     background-color: rgb(24, 24, 24);
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -312,6 +312,13 @@ body{
     justify-content: flex-start;
 }
 
+
+@media (max-width: 576px){
+    .row{
+        display: block;
+    }
+}
+
 #executives .col {
     padding: 0;
     margin: 0;
@@ -401,6 +408,7 @@ body{
     padding: 16px 0 12px 0;
     transition: height 1s;
     animation-duration: 500ms;
+    
 }
 
 @media(max-width: 576px) {
